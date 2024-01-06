@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/furniture"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contextClickable="false"
+        android:text="___Login"
+        android:textColor="@color/material_dynamic_primary30"
+        android:textColorLink="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:textColor="@color/material_dynamic_primary30"
+        android:textColorHint="@color/material_dynamic_primary30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:textColor="@color/material_dynamic_primary30"
+        android:textColorHint="@color/material_dynamic_primary30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etUsername"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <Button
+        android:id="@+id/logintohome"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+
+        android:backgroundTint="@color/material_dynamic_primary30"
+        android:backgroundTintMode="src_over"
+        android:shadowColor="@color/material_dynamic_primary30"
+        android:text="Login"
+
+        android:textColorHighlight="@color/material_dynamic_primary30"
+        android:textColorLink="@color/material_dynamic_primary30"
+        android:textSize="20dp"
+        app:cornerRadius="2dp"
+        app:iconTint="@color/material_dynamic_primary30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.20999998"
+        app:rippleColor="@color/material_dynamic_primary30"
+        app:strokeColor="@color/material_dynamic_primary30"></Button>
+
+    <TextView
+        android:id="@+id/gotosignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have Account ?"
+        android:textColor="@color/material_dynamic_primary30"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logintohome"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
